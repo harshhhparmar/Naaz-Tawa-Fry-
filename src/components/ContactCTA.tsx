@@ -54,8 +54,8 @@ export default function ContactCTA() {
               </div>
               <div className="bg-black/20 p-6 rounded-2xl border border-white/5 flex flex-col items-center sm:items-start text-center sm:text-left">
                 <Info className="text-orange-400 mb-3" size={24} />
-                <h4 className="font-bold text-white mb-1">Delivery</h4>
-                <p className="text-orange-100/70 text-sm">{RESTAURANT_INFO.minOrder}</p>
+                <h4 className="font-bold text-white mb-1">Free Delivery</h4>
+                <p className="text-orange-100/70 text-sm">Min order {RESTAURANT_INFO.minOrder.split(' ')[0]}</p>
                 <p className="text-orange-100/70 text-sm">{RESTAURANT_INFO.deliveryArea}</p>
               </div>
               <div className="bg-black/20 p-6 rounded-2xl border border-white/5 flex flex-col items-center justify-center text-center">

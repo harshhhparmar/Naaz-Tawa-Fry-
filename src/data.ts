@@ -2,25 +2,26 @@ export const RESTAURANT_INFO = {
   name: "Naaz Tawa Fry",
   tagline: "Har Bite Mein Naaz Ka Andaaz",
   cuisines: "Tawa, Chinese, Mughlai, Seafood & Tandoor",
-  phone: "+91 98765 43210", // Placeholder
-  address: "Ahmedabad, Gujarat", // Placeholder
-  timings: "12:00 PM - 11:30 PM",
-  minOrder: "₹500 for Free Delivery",
-  deliveryArea: "Upto 5 KM",
+  phone: "+91 89809 66194",
+  address: "Sonal Cross Road, Opp. Ghandhi Hall, Nr. Ahsan Park, Juhapura-Sarkhej Road, Ahmedabad - 380055",
+  timings: "12:00 PM to 12:00 AM",
+  minOrder: "₹300 for Free Home Delivery",
+  deliveryArea: "in around 5km",
   zomatoLink: "#",
   swiggyLink: "#",
+  toingLink: "#"
 };
 
 export const FEATURED_DISHES = [
   {
     name: "Tandoori Chicken",
-    price: "₹350 / ₹650",
+    price: "₹180 / ₹300",
     description: "Classic smoky tandoori chicken marinated in our secret spices.",
     image: "https://images.unsplash.com/photo-1597393310715-2092ca82a7bd?auto=format&fit=crop&q=80&w=800",
   },
   {
     name: "Mutton Bhuna Gosht",
-    price: "₹420",
+    price: "₹240",
     description: "Slow-cooked mutton in rich, dark Mughlai spices.",
     image: "https://images.unsplash.com/photo-1544681280-d25a782adc9b?auto=format&fit=crop&q=80&w=800",
   },
@@ -32,107 +33,128 @@ export const FEATURED_DISHES = [
   },
   {
     name: "Chicken Tikka Biryani",
-    price: "₹290",
-    description: "Aromatic basmati rice layered with spicy chicken tikka.",
+    price: "₹240 / ₹320",
+    description: "Aromatic basmati rice layered with spicy boneless chicken tikka.",
     image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=800",
   },
   {
     name: "Chicken Lollipop",
-    price: "₹260",
+    price: "₹180 / ₹250",
     description: "Crispy fried chicken wings tossed in fiery Chinese sauce.",
     image: "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    name: "Butter Chicken",
-    price: "₹320",
-    description: "Velvety smooth tomato gravy with succulent chicken pieces.",
-    image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&q=80&w=800",
   }
 ];
 
 export const THAAL_SPECIALS = [
   {
-    name: "Naaz Special Chicken Thaal",
-    price: "₹1,299",
-    serves: "4-5 Persons",
-    items: "Assorted Chicken Starters, Butter Chicken, Chicken Biryani, Roti, Salad, Raita, Dessert",
-    image: "https://images.unsplash.com/photo-1589302168068-964664d93cb0?auto=format&fit=crop&q=80&w=800"
+    name: "Couple Thaal",
+    price: "₹699",
+    serves: "2 Persons",
+    items: "Chicken Manchurian Soup, Chicken Tandoori (2pcs), Chicken Tikka Fry, Chapati Roti (6), Chicken Fry Rice, Green Salad",
   },
   {
-    name: "Shahi Mutton Thaal",
-    price: "₹1,699",
-    serves: "4-5 Persons",
-    items: "Mutton Seekh, Mutton Bhuna, Mutton Biryani, Naan, Salad, Raita, Dessert",
-    image: "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=800"
+    name: "Mini Thaal",
+    price: "₹1099",
+    serves: "3-4 Persons",
+    items: "Manchow Soup 4, Chicken Tandoori Full, Chicken Lolipop (4pcs), Chicken Angara Full, Tandoori Roti 8, Chicken Fry Rice, Green Salad",
   },
   {
-    name: "Mix Seafood Thaal",
-    price: "₹1,899",
+    name: "Silver Thaal",
+    price: "₹1299",
+    serves: "4 Persons",
+    items: "4 Chicken Soup, 4 Chicken Tangadi Kabab, 4 Chicken Lolipop, Chickn Changezi Full, 8 Tandoori Roti, Chicken Fried Rice, Papad & Green Salad, Jeeru & Mineral Water",
+  },
+  {
+    name: "Shahi Thaal",
+    price: "₹1499",
     serves: "4-5 Persons",
-    items: "Fish Fry, Prawns Koliwada, Fish Curry, Rice, Roti, Salad, Dessert",
-    image: "https://images.unsplash.com/photo-1539755530732-06728a99479b?auto=format&fit=crop&q=80&w=800"
+    items: "Chicken Hot n Sour Soup, Chicken Barra Dry (12Pcs), Hongkong Lolipop, Mutton Afghani Full, Chicken Fry Rice, Chicken Garlic Dry, Chicken Pesto Full, Tandoori Roti, Green Salad, Fry Papd, Colddrink 4",
+  },
+  {
+    name: "Golden Thaal",
+    price: "₹2199",
+    serves: "6 Persons",
+    items: "6 Chicken Soup of Choice, 6 Chicken Tangadi Kabab, 6 Chicken Lollypop Dry, 6 Silling Chicken Tikka, Naaz Special Full, Mutton Bombay Chap Full, Chicken Tikka Fry, 12 Tandoori Roti, Chicken Singapuri Rice, Green Salad, Cold Drink 6",
+  },
+  {
+    name: "Platinum Thaal",
+    price: "₹2499",
+    serves: "6 Persons",
+    items: "6 Manchow Soup, 12 Chicken Angara Tikka, 12 Sezwan Tandoori, 6 Fish Finger, Chicken Afghani Full, Mutton Roganjosh Full, Chicken Biryani Full, 12 Tandoori Roti, Green Salad, 6 Cold Drink, 6 Fry Papad, Water Bottle.",
   }
 ];
 
 export const MENU_CATEGORIES = [
   {
     category: "Starter",
-    image: "https://images.unsplash.com/photo-1597393310715-2092ca82a7bd?auto=format&fit=crop&q=80&w=800",
     items: [
-      { name: "Chicken Tikka", price: "₹250" },
-      { name: "Mutton Seekh Kebab", price: "₹320" },
-      { name: "Paneer Malai Tikka", price: "₹220" },
-      { name: "Chicken Malai Boti", price: "₹280" },
+      { name: "Chicken Tandoori", price: "₹180", fullPrice: "₹300" },
+      { name: "Chicken Sezwan Tandoori", price: "₹180", fullPrice: "₹350" },
+      { name: "Malai Tandoori Chicken", price: "₹200", fullPrice: "₹400" },
+      { name: "Chicken Barrah Tandoori", price: "₹280", fullPrice: "₹450" },
+      { name: "Chicken Lollypop Dry / Gravy", price: "₹180", fullPrice: "₹250" },
+    ]
+  },
+  {
+    category: "Soup",
+    items: [
+      { name: "Hot & Sour Soup (Veg / Chicken)", price: "₹80", fullPrice: "₹100" },
+      { name: "Manchow Soup (Veg / Chicken)", price: "₹80", fullPrice: "₹100" },
+      { name: "Chicken Clear Soup", price: "₹100" },
     ]
   },
   {
     category: "Mughlai Gravy",
-    image: "https://images.unsplash.com/photo-1544681280-d25a782adc9b?auto=format&fit=crop&q=80&w=800",
     items: [
-      { name: "Chicken Angara", price: "₹310" },
-      { name: "Mutton Rogan Josh", price: "₹450" },
-      { name: "Chicken Korma", price: "₹290" },
-      { name: "Mutton Nihari", price: "₹480" },
+      { name: "Chicken Kadhai", price: "₹280" },
+      { name: "Mutton Rogan Josh", price: "₹300" },
+      { name: "Naaz Special Chicken", price: "₹300" },
+      { name: "Butter Chicken", price: "₹280" },
+      { name: "Chicken Angara", price: "₹350" },
+      { name: "Mutton Badshah", price: "₹600" },
     ]
   },
   {
-    category: "Chinese",
-    image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&q=80&w=800",
+    category: "Chinese Rice",
     items: [
-      { name: "Chicken Fried Rice", price: "₹220" },
-      { name: "Veg Hakka Noodles", price: "₹180" },
-      { name: "Chilli Chicken", price: "₹260" },
-      { name: "Chicken Triple Schezwan", price: "₹320" },
+      { name: "Chicken Fry Rice", price: "₹130", fullPrice: "₹200" },
+      { name: "Chicken Shezwan Rice", price: "₹140", fullPrice: "₹220" },
+      { name: "Chicken Manchurian Rice", price: "₹150", fullPrice: "₹250" },
+      { name: "Naaz Sp. Rice", price: "₹180", fullPrice: "₹280" },
     ]
   },
   {
-    category: "Seafood",
-    image: "https://images.unsplash.com/photo-1599487405270-8174301540bc?auto=format&fit=crop&q=80&w=800",
+    category: "Sea Food",
     items: [
-      { name: "Surmai Fry", price: "₹450" },
-      { name: "Pomfret Tandoori", price: "₹550" },
-      { name: "Prawns Masala", price: "₹420" },
-      { name: "Fish Curry", price: "₹380" },
+      { name: "Fish Finger", price: "₹370" },
+      { name: "Fish Tikka Masala", price: "₹300" },
+      { name: "Prawns Tawa Fry", price: "₹280" },
+    ]
+  },
+  {
+    category: "Chicken & Mutton Tawa",
+    items: [
+      { name: "Chicken Leg Tawa Fry", price: "₹200" },
+      { name: "Chicken Bhuna", price: "₹210" },
+      { name: "Mutton Bhuna Fry", price: "₹240" },
+      { name: "Mutton Chop Fry", price: "₹240" },
     ]
   },
   {
     category: "Biryani & Rice",
-    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=800",
     items: [
-      { name: "Chicken Dum Biryani", price: "₹280" },
-      { name: "Mutton Biryani", price: "₹380" },
-      { name: "Egg Biryani", price: "₹220" },
-      { name: "Veg Pulao", price: "₹180" },
+      { name: "Chicken Biryani", price: "₹200", fullPrice: "₹270" },
+      { name: "Chicken Tikka Biryani Boneless", price: "₹240", fullPrice: "₹320" },
+      { name: "Mutton Biryani", price: "₹270", fullPrice: "₹420" },
+      { name: "Naaz Special Kabsa Rice", price: "₹650", fullPrice: "₹1150" },
     ]
   },
   {
-    category: "Breads & Extras",
-    image: "https://images.unsplash.com/photo-1626200419109-382a514d0ff9?auto=format&fit=crop&q=80&w=800",
+    category: "Roti / Naan",
     items: [
-      { name: "Butter Naan", price: "₹50" },
-      { name: "Tandoori Roti", price: "₹30" },
-      { name: "Garlic Naan", price: "₹70" },
-      { name: "Roasted Papad", price: "₹30" },
+      { name: "Plain Tawa Roti", price: "₹10" },
+      { name: "Butter Tandoori Roti", price: "₹25" },
+      { name: "Butter Naan", price: "₹30" },
     ]
   }
 ];
@@ -152,6 +174,6 @@ export const WHY_CHOOSE_US = [
   },
   {
     title: "Free Home Delivery",
-    description: "Enjoy our delicacies at home. Free delivery on orders above ₹500."
+    description: "Enjoy our delicacies at home. Free delivery on orders above ₹300."
   }
 ];

@@ -1,83 +1,116 @@
-import React from 'react';
-import { motion } from 'motion/react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { THAAL_SPECIALS } from '../data';
-import { Users, CheckCircle2 } from 'lucide-react';
+import { Users, ChevronDown, Utensils } from 'lucide-react';
 
 export default function ThaalSpecial() {
+  const [openIndex, setOpenIndex] = useState<number | null>(1); // Open the second one (Mini Thaal) by default
+
   return (
-    <section id="thaal" className="py-24 bg-zinc-900 text-white relative overflow-hidden">
+    <section id="thaal" className="py-24 bg-zinc-950 text-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] bg-red-900/20 blur-[120px] rounded-full"></div>
-        <div className="absolute -bottom-[20%] -left-[10%] w-[50%] h-[50%] bg-orange-900/20 blur-[120px] rounded-full"></div>
+        <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] bg-red-900/10 blur-[120px] rounded-full"></div>
+        <div className="absolute -bottom-[20%] -left-[10%] w-[50%] h-[50%] bg-orange-900/10 blur-[120px] rounded-full"></div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 max-w-7xl relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+      <div className="container mx-auto px-4 md:px-8 max-w-4xl relative z-10">
+        <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="text-red-500 font-bold tracking-widest uppercase text-sm">Family Dining</span>
+            <span className="text-orange-500 font-bold tracking-[0.2em] uppercase text-sm">Group Dining</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-6">
-            The Royal <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">Thaal</span>
+            The Royal <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">Thaals</span>
           </h2>
-          <p className="text-zinc-400 text-base md:text-lg">
-            Experience true Mughlai hospitality with our massive family-sized Thaals. 
-            Perfect for sharing with your loved ones, offering the best value and variety.
+          <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto">
+            Experience authentic Mughlai hospitality with our grand family-sized Thaals. 
+            Perfect for sharing with your loved ones, offering unmatched value and variety.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
-          {THAAL_SPECIALS.map((thaal, index) => (
-            <motion.div 
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`rounded-2xl border ${index === 1 ? 'bg-red-950/40 border-red-500/30' : 'bg-white/5 border-white/10'} backdrop-blur-sm relative overflow-hidden group hover:border-red-500/50 transition-colors flex flex-col`}
-            >
-              <div className="relative h-48 w-full overflow-hidden shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-transparent z-10"></div>
-                <img src={thaal.image} alt={thaal.name} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" />
-                {index === 1 && (
-                  <div className="absolute top-0 right-0 z-20 bg-red-600 text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-bl-lg">
-                    Most Popular
+        <div className="space-y-4">
+          {THAAL_SPECIALS.map((thaal, index) => {
+            const isOpen = openIndex === index;
+            const isPopular = thaal.name === "Shahi Thaal" || thaal.name === "Silver Thaal";
+            
+            return (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
+                  isOpen 
+                    ? 'bg-zinc-900 border-orange-500/30 shadow-[0_10px_30px_rgba(0,0,0,0.5)]' 
+                    : 'bg-white/5 border-white/10 hover:border-white/20 hover:bg-white/10'
+                }`}
+              >
+                <button 
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  className="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none"
+                >
+                  <div>
+                    <div className="flex items-center gap-3 mb-2">
+                      <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight">
+                        {thaal.name}
+                      </h3>
+                      {isPopular && (
+                        <span className="hidden sm:inline-block bg-red-600/20 text-red-400 border border-red-500/30 px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider">
+                          Popular
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-2 text-zinc-400 text-sm font-medium">
+                      <Users size={16} className="text-orange-500" />
+                      Serves {thaal.serves}
+                    </div>
                   </div>
-                )}
-              </div>
-              
-              <div className="p-8 flex flex-col grow">
-                <h3 className="text-2xl font-bold text-white mb-2">{thaal.name}</h3>
-                <div className="flex items-center gap-2 text-zinc-400 mb-6 text-sm font-medium">
-                  <Users size={16} />
-                  Serves {thaal.serves}
-                </div>
-                
-                <div className="text-3xl md:text-4xl font-black text-orange-400 mb-8 pb-8 border-b border-white/10">
-                  {thaal.price}
-                </div>
-
-                <div className="space-y-4 mb-8 grow">
-                  <p className="text-sm text-zinc-300 font-medium uppercase tracking-wider mb-2">Includes:</p>
-                  <ul className="space-y-3">
-                    {thaal.items.split(', ').map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-zinc-300 text-sm">
-                        <CheckCircle2 size={18} className="text-red-500 shrink-0 mt-0.5" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <button className={`w-full py-4 rounded-xl font-bold tracking-wide transition-all mt-auto ${
-                  index === 1 
-                    ? 'bg-red-600 hover:bg-red-500 text-white shadow-[0_0_20px_rgba(220,38,38,0.3)]' 
-                    : 'bg-white/10 hover:bg-white/20 text-white'
-                }`}>
-                  Order This Thaal
+                  
+                  <div className="flex items-center gap-4 md:gap-8 shrink-0">
+                    <div className="text-2xl md:text-3xl font-black text-orange-400">
+                      {thaal.price}
+                    </div>
+                    <motion.div 
+                      animate={{ rotate: isOpen ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                      className={`hidden sm:flex items-center justify-center w-10 h-10 rounded-full ${isOpen ? 'bg-orange-500/20 text-orange-400' : 'bg-white/5 text-zinc-400'}`}
+                    >
+                      <ChevronDown size={20} />
+                    </motion.div>
+                  </div>
                 </button>
-              </div>
-            </motion.div>
-          ))}
+
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="p-6 md:p-8 pt-0 border-t border-white/5 mt-2">
+                        <p className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">What's Included</p>
+                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
+                          {thaal.items.split(', ').map((item, i) => (
+                            <li key={i} className="flex items-start gap-3 text-zinc-300 text-sm md:text-base leading-relaxed">
+                              <Utensils size={16} className="text-red-500 shrink-0 mt-1 opacity-70" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <div className="mt-8 flex justify-end">
+                           <button className="w-full sm:w-auto bg-orange-600 hover:bg-orange-500 text-white px-8 py-3 rounded-xl font-bold tracking-wide transition-all shadow-[0_0_15px_rgba(234,88,12,0.3)] hover:-translate-y-0.5">
+                             Order {thaal.name}
+                           </button>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
