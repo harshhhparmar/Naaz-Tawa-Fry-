@@ -16,19 +16,19 @@ export const FEATURED_DISHES = [
     name: "Tandoori Chicken",
     price: "₹350 / ₹650",
     description: "Classic smoky tandoori chicken marinated in our secret spices.",
-    image: "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1597393310715-2092ca82a7bd?auto=format&fit=crop&q=80&w=800",
   },
   {
     name: "Mutton Bhuna Gosht",
     price: "₹420",
     description: "Slow-cooked mutton in rich, dark Mughlai spices.",
-    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1544681280-d25a782adc9b?auto=format&fit=crop&q=80&w=800",
   },
   {
     name: "Fish Tawa Fry",
     price: "₹380",
     description: "Crispy outer, tender inside. Served with spicy green chutney.",
-    image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1599487405270-8174301540bc?auto=format&fit=crop&q=80&w=800",
   },
   {
     name: "Chicken Tikka Biryani",
@@ -40,7 +40,7 @@ export const FEATURED_DISHES = [
     name: "Chicken Lollipop",
     price: "₹260",
     description: "Crispy fried chicken wings tossed in fiery Chinese sauce.",
-    image: "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&q=80&w=800",
   },
   {
     name: "Butter Chicken",
@@ -77,7 +77,7 @@ export const THAAL_SPECIALS = [
 export const MENU_CATEGORIES = [
   {
     category: "Starter",
-    image: "https://images.unsplash.com/photo-1599487405270-8174301540bc?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1597393310715-2092ca82a7bd?auto=format&fit=crop&q=80&w=800",
     items: [
       { name: "Chicken Tikka", price: "₹250" },
       { name: "Mutton Seekh Kebab", price: "₹320" },
@@ -87,7 +87,7 @@ export const MENU_CATEGORIES = [
   },
   {
     category: "Mughlai Gravy",
-    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1544681280-d25a782adc9b?auto=format&fit=crop&q=80&w=800",
     items: [
       { name: "Chicken Angara", price: "₹310" },
       { name: "Mutton Rogan Josh", price: "₹450" },
@@ -107,7 +107,7 @@ export const MENU_CATEGORIES = [
   },
   {
     category: "Seafood",
-    image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1599487405270-8174301540bc?auto=format&fit=crop&q=80&w=800",
     items: [
       { name: "Surmai Fry", price: "₹450" },
       { name: "Pomfret Tandoori", price: "₹550" },
