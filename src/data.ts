@@ -16,7 +16,7 @@ export const FEATURED_DISHES = [
     name: "Tandoori Chicken",
     price: "₹350 / ₹650",
     description: "Classic smoky tandoori chicken marinated in our secret spices.",
-    image: "https://images.unsplash.com/photo-1599487405270-8174301540bc?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&q=80&w=800",
   },
   {
     name: "Mutton Bhuna Gosht",
@@ -28,7 +28,7 @@ export const FEATURED_DISHES = [
     name: "Fish Tawa Fry",
     price: "₹380",
     description: "Crispy outer, tender inside. Served with spicy green chutney.",
-    image: "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=800",
   },
   {
     name: "Chicken Tikka Biryani",
@@ -56,24 +56,28 @@ export const THAAL_SPECIALS = [
     price: "₹1,299",
     serves: "4-5 Persons",
     items: "Assorted Chicken Starters, Butter Chicken, Chicken Biryani, Roti, Salad, Raita, Dessert",
+    image: "https://images.unsplash.com/photo-1589302168068-964664d93cb0?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Shahi Mutton Thaal",
     price: "₹1,699",
     serves: "4-5 Persons",
     items: "Mutton Seekh, Mutton Bhuna, Mutton Biryani, Naan, Salad, Raita, Dessert",
+    image: "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=800"
   },
   {
     name: "Mix Seafood Thaal",
     price: "₹1,899",
     serves: "4-5 Persons",
     items: "Fish Fry, Prawns Koliwada, Fish Curry, Rice, Roti, Salad, Dessert",
+    image: "https://images.unsplash.com/photo-1539755530732-06728a99479b?auto=format&fit=crop&q=80&w=800"
   }
 ];
 
 export const MENU_CATEGORIES = [
   {
     category: "Starter",
+    image: "https://images.unsplash.com/photo-1599487405270-8174301540bc?auto=format&fit=crop&q=80&w=800",
     items: [
       { name: "Chicken Tikka", price: "₹250" },
       { name: "Mutton Seekh Kebab", price: "₹320" },
@@ -83,6 +87,7 @@ export const MENU_CATEGORIES = [
   },
   {
     category: "Mughlai Gravy",
+    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&q=80&w=800",
     items: [
       { name: "Chicken Angara", price: "₹310" },
       { name: "Mutton Rogan Josh", price: "₹450" },
@@ -92,6 +97,7 @@ export const MENU_CATEGORIES = [
   },
   {
     category: "Chinese",
+    image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&q=80&w=800",
     items: [
       { name: "Chicken Fried Rice", price: "₹220" },
       { name: "Veg Hakka Noodles", price: "₹180" },
@@ -101,6 +107,7 @@ export const MENU_CATEGORIES = [
   },
   {
     category: "Seafood",
+    image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=800",
     items: [
       { name: "Surmai Fry", price: "₹450" },
       { name: "Pomfret Tandoori", price: "₹550" },
@@ -110,6 +117,7 @@ export const MENU_CATEGORIES = [
   },
   {
     category: "Biryani & Rice",
+    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=800",
     items: [
       { name: "Chicken Dum Biryani", price: "₹280" },
       { name: "Mutton Biryani", price: "₹380" },
@@ -119,6 +127,7 @@ export const MENU_CATEGORIES = [
   },
   {
     category: "Breads & Extras",
+    image: "https://images.unsplash.com/photo-1626200419109-382a514d0ff9?auto=format&fit=crop&q=80&w=800",
     items: [
       { name: "Butter Naan", price: "₹50" },
       { name: "Tandoori Roti", price: "₹30" },

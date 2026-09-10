@@ -53,26 +53,45 @@ export default function MenuPreview() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
-              className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6"
+              className="flex flex-col lg:flex-row gap-8 lg:gap-12"
             >
-              {currentCategoryData?.items.map((item, index) => (
-                <div key={index} className="flex justify-between items-baseline border-b border-slate-100 pb-4 group">
-                  <div className="pr-4">
-                    <h4 className="text-lg font-bold text-slate-800 group-hover:text-red-700 transition-colors">{item.name}</h4>
-                  </div>
-                  <div className="text-lg font-black text-slate-900 shrink-0">
-                    {item.price}
+              {/* Category Image */}
+              <div className="lg:w-1/3">
+                <div className="relative h-64 lg:h-full w-full rounded-2xl overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10"></div>
+                  <img 
+                    src={currentCategoryData?.image} 
+                    alt={currentCategoryData?.category} 
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+                  <div className="absolute bottom-6 left-6 z-20">
+                    <h3 className="text-3xl font-black text-white drop-shadow-lg">{currentCategoryData?.category}</h3>
                   </div>
                 </div>
-              ))}
+              </div>
+
+              {/* Items List */}
+              <div className="lg:w-2/3 flex flex-col justify-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                  {currentCategoryData?.items.map((item, index) => (
+                    <div key={index} className="flex justify-between items-baseline border-b border-slate-100 pb-4 group cursor-pointer">
+                      <div className="pr-4">
+                        <h4 className="text-lg font-bold text-slate-800 group-hover:text-red-700 transition-colors">{item.name}</h4>
+                      </div>
+                      <div className="text-lg font-black text-slate-900 shrink-0">
+                        {item.price}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-12 text-center lg:text-left">
+                  <button className="bg-slate-100 hover:bg-slate-200 text-slate-900 px-8 py-3 rounded-full font-bold text-sm tracking-wide transition-colors">
+                    View All {currentCategoryData?.category}
+                  </button>
+                </div>
+              </div>
             </motion.div>
           </AnimatePresence>
-          
-          <div className="mt-12 text-center">
-            <button className="bg-slate-100 hover:bg-slate-200 text-slate-900 px-8 py-3 rounded-full font-bold text-sm tracking-wide transition-colors">
-              View Complete Menu
-            </button>
-          </div>
         </div>
       </div>
     </section>

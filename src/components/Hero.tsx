@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-orange-950/80 via-orange-950/60 to-orange-950/95 z-10"></div>
         <img 
-          src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&q=80&w=2000" 
+          src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=2000" 
           alt="Rich Mughlai Food Spread" 
           className="w-full h-full object-cover scale-105"
         />
