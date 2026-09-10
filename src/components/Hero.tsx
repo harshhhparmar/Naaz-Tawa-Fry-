@@ -32,14 +32,14 @@ export default function Hero() {
             <span className="w-12 h-[1px] bg-red-500 hidden md:block"></span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] tracking-tight mb-6 drop-shadow-lg">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] tracking-tight mb-6 drop-shadow-lg">
             <span className="block">{RESTAURANT_INFO.name}</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-300 block text-4xl md:text-6xl lg:text-7xl mt-2 font-serif italic font-medium tracking-normal">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-300 block text-3xl sm:text-4xl md:text-6xl lg:text-7xl mt-2 font-serif italic font-medium tracking-normal">
               "{RESTAURANT_INFO.tagline}"
             </span>
           </h1>
           
-          <p className="text-orange-100/80 md:text-lg max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+          <p className="text-orange-100/80 text-base md:text-lg max-w-2xl mx-auto mb-10 font-light leading-relaxed">
             Experience the authentic taste of Ahmedabad. Premium tawa specials, rich Mughlai gravies, 
             and fiery tandoori delights prepared with centuries-old recipes.
           </p>

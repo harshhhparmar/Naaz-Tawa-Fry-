@@ -16,7 +16,7 @@ export default function FeaturedDishes() {
               <span className="w-8 h-[2px] bg-red-700"></span>
               <span className="text-red-700 font-bold tracking-widest uppercase text-sm">Chef's Recommendations</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight">
               Signature <span className="text-red-700">Dishes</span>
             </h2>
           </div>

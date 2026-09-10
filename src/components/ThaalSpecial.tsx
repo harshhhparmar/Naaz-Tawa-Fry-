@@ -16,10 +16,10 @@ export default function ThaalSpecial() {
           <div className="flex items-center justify-center gap-3 mb-4">
             <span className="text-red-500 font-bold tracking-widest uppercase text-sm">Family Dining</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-6">
+          <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-6">
             The Royal <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">Thaal</span>
           </h2>
-          <p className="text-zinc-400 text-lg">
+          <p className="text-zinc-400 text-base md:text-lg">
             Experience true Mughlai hospitality with our massive family-sized Thaals. 
             Perfect for sharing with your loved ones, offering the best value and variety.
           </p>
@@ -47,7 +47,7 @@ export default function ThaalSpecial() {
                 Serves {thaal.serves}
               </div>
               
-              <div className="text-4xl font-black text-orange-400 mb-8 pb-8 border-b border-white/10">
+              <div className="text-3xl md:text-4xl font-black text-orange-400 mb-8 pb-8 border-b border-white/10">
                 {thaal.price}
               </div>
 

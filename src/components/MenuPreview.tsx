@@ -17,7 +17,7 @@ export default function MenuPreview() {
               <span className="w-8 h-[2px] bg-red-700"></span>
               <span className="text-red-700 font-bold tracking-widest uppercase text-sm">Discover</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight">
               Our <span className="text-red-700">Menu</span>
             </h2>
           </div>
@@ -33,7 +33,7 @@ export default function MenuPreview() {
             <button
               key={cat.category}
               onClick={() => setActiveCategory(cat.category)}
-              className={`whitespace-nowrap px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all ${
+              className={`whitespace-nowrap px-5 md:px-6 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider transition-all ${
                 activeCategory === cat.category 
                   ? 'bg-red-700 text-white shadow-md' 
                   : 'bg-white text-slate-600 hover:bg-red-50 hover:text-red-700 border border-slate-200'

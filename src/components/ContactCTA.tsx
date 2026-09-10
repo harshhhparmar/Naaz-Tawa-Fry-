@@ -12,10 +12,10 @@ export default function ContactCTA() {
         <div className="bg-red-900/20 border border-red-500/20 rounded-3xl p-8 md:p-12 backdrop-blur-sm flex flex-col lg:flex-row items-center gap-12">
           
           <div className="lg:w-1/2 space-y-6 text-center lg:text-left">
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white">
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white">
               Ready to <span className="text-orange-400">Order?</span>
             </h2>
-            <p className="text-orange-100/80 text-lg max-w-lg mx-auto lg:mx-0">
+            <p className="text-orange-100/80 text-base md:text-lg max-w-lg mx-auto lg:mx-0">
               Experience the best Mughlai and Tawa dishes in Ahmedabad. Call us now for reservations or free home delivery.
             </p>
             
