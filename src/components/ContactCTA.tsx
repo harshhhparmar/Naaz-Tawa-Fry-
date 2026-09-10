@@ -60,9 +60,10 @@ export default function ContactCTA() {
               </div>
               <div className="bg-black/20 p-6 rounded-2xl border border-white/5 flex flex-col items-center justify-center text-center">
                 <h4 className="font-bold text-white mb-3">Order Online</h4>
-                <div className="flex gap-3">
-                  <a href={RESTAURANT_INFO.zomatoLink} className="bg-white text-red-600 px-4 py-2 rounded-lg font-bold text-xs uppercase tracking-wider hover:scale-105 transition-transform">Zomato</a>
-                  <a href={RESTAURANT_INFO.swiggyLink} className="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold text-xs uppercase tracking-wider hover:scale-105 transition-transform">Swiggy</a>
+                <div className="flex flex-wrap justify-center gap-2">
+                  <a href={RESTAURANT_INFO.zomatoLink} className="bg-white text-red-600 px-3 py-1.5 rounded-lg font-bold text-xs uppercase tracking-wider hover:scale-105 transition-transform">Zomato</a>
+                  <a href={RESTAURANT_INFO.swiggyLink} className="bg-orange-500 text-white px-3 py-1.5 rounded-lg font-bold text-xs uppercase tracking-wider hover:scale-105 transition-transform">Swiggy</a>
+                  <a href={RESTAURANT_INFO.toingLink} className="bg-purple-600 text-white px-3 py-1.5 rounded-lg font-bold text-xs uppercase tracking-wider hover:scale-105 transition-transform">Toing</a>
                 </div>
               </div>
             </div>

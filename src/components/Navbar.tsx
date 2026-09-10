@@ -117,7 +117,7 @@ export default function Navbar() {
                 <li className="pt-8">
                   <a 
                     href={`tel:${RESTAURANT_INFO.phone.replace(/[^0-9+]/g, '')}`}
-                    className="flex items-center justify-center gap-2 bg-red-700 hover:bg-red-600 transition-colors text-white px-5 py-4 rounded-xl text-base font-bold tracking-wide w-full shadow-lg"
+                    className="flex items-center justify-center gap-2 bg-red-700 hover:bg-red-600 active:bg-red-800 transition-colors text-white px-5 py-4 rounded-xl text-base font-bold tracking-wide w-full shadow-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     <Phone size={18} className="animate-pulse" />

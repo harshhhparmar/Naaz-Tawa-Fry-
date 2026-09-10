@@ -18,6 +18,7 @@ export default function Hero() {
           src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=2000" 
           alt="Rich Mughlai Food Spread" 
           className="w-full h-full object-cover"
+          fetchPriority="high"
         />
       </motion.div>
 
