@@ -1,0 +1,6 @@
+{
+  "name": "Naaz Tawa Fry",
+  "description": "Premium restaurant service website demo for Naaz Tawa Fry, Ahmedabad. Features Indian, Mughlai, Tawa and Seafood cuisines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
